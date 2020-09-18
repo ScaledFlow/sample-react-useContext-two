@@ -1,11 +1,14 @@
 import React from 'react';
+import FunctionContextComponent from './FunctionContextComponent'
+import { ThemeProvider } from './ThemeContext'
 
-function App() {
+// export const ThemeContext = React.createContext();
+
+export default function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+    <ThemeProvider>
+    < FunctionContextComponent />
+    </ThemeProvider>
+  )
 }
 
-export default App;
